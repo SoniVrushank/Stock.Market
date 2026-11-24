@@ -1,0 +1,2 @@
+# F.R.I.D.A.Y. | Research draft
+Research only, 24 November 2026. No GitHub/Notion changes or automated trades authorized. India-first cash equities; ChatGPT is the user interface and research engine. Hourly scheduled checks are not a streaming feed. No claim of profitability. Start with swing and paper trading. Read architecture, source register, research notes and evaluation protocol before implementation. Third-party PDFs are linked, not bundled; original candle reference is included. No third-party code was executed or copied. Claude review is pending.

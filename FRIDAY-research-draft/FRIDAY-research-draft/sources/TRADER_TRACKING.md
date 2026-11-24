@@ -1,0 +1,2 @@
+# Candidate insight sources
+Study public commentary by Vijay Kedia, Ashish Kacholia, Sunil Singhania, Raamdeo Agrawal, Vivek Bajaj, Mark Minervini, Linda Raschke, Howard Marks and Ray Dalio. This is not an accuracy ranking. Verify official accounts, original URLs and registration where relevant before recording actionable calls. Do not turn portfolio disclosures into live trades. Track horizon, original call, revisions, conflict disclosures, later outcome and benchmark. No private groups or paid-content copying.

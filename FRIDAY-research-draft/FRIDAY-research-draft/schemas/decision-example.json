@@ -1,0 +1,14 @@
+{
+  "symbol": "DEMO",
+  "decision": "WAIT",
+  "horizon": "Swing",
+  "as_of_ist": null,
+  "price": null,
+  "entry": null,
+  "stop": null,
+  "target": null,
+  "reason": "No verified market data.",
+  "sources": [],
+  "data_status": "Unavailable",
+  "paper_only": true
+}
