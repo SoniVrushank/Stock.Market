@@ -84,3 +84,23 @@ The fifth file is the original illustrated candle reference. Third-party PDFs ar
 - NSE/BSE company filings and IR: primary verification of catalyst and exchange session; official historical OHLC where accessible.
 - Preserve publication time, revision time, source URL, quote timestamp and delay separately. Use original article/video and time-specific transcript only where available; search index time alone does not establish when a recommendation was published. Do not bypass restrictions or substitute post-opening recaps. Record source status (verified / delayed / unavailable / conflicting), and use independent corroboration rather than duplicate syndication.
 - No source, including Anil Singhvi, has an established accuracy advantage in our project yet. Compare on matched symbols, horizons and dates.
+
+
+---
+
+# v4 source expansion and automation research
+Candidate sources: ET Now https://www.etnownews.com/ ; NDTV Profit https://www.ndtvprofit.com/ ; Bloomberg https://www.bloomberg.com/ ; FT https://www.ft.com/ ; CNBC International https://www.cnbc.com/ ; Nikkei Asia https://asia.nikkei.com/ ; CME FedWatch https://www.cmegroup.com/markets/interest-rates/cme-fedwatch-tool.html ; US BLS https://www.bls.gov/ ; BEA https://www.bea.gov/ ; EIA https://www.eia.gov/ ; OPEC https://www.opec.org/ ; World Gold Council https://www.gold.org/ . Keep prior primary sources and Zee Business/CNBC priority. Verify access, timestamps and licensing at use; no paywall bypass. Broker tariffs https://zerodha.com/charges and https://dhan.co/pricing/ ; verify each run if trade costs matter.
+
+## Open-source candidates (README-level discovery 24 Nov 2026; no code audit or execution)
+- https://github.com/charan2711/nse-trading-toolkit — NSE skills, calendar, INR charges, paper trades; exclude broker execution.
+- https://github.com/amitshq/Indian-Trader-Skill — risk-gated paper journal, tests, dashboard; review dependencies and tests independently.
+- https://github.com/KTS-o7/open-breakout-scanner — breakout/relative strength screening; end-of-day research, not evidence of live feed.
+- https://github.com/sanT-0/nse-day-trader-skills — manual ticket and risk workflow; audit data provenance.
+- https://github.com/n8n-io/self-hosted-ai-starter-kit — local n8n, Ollama and supporting services. Review resource needs and secure deployment.
+- https://ollama.com/ — local inference; select hardware-appropriate model; benchmark structured output and hallucinations. Local HTTP interface does not require paid cloud AI API.
+- https://www.reddit.com/r/IndiaAlgoTrading/comments/1e768pm/how_can_i_do_paper_trading_via_python_script_file/ — community caution about delayed feeds and fill realism, anecdotal not evidence of performance.
+- https://support.zerodha.com/category/trading-and-markets/general-kite/kite-api/articles/what-are-the-charges-for-kite-apis — personal free plan excludes live/historical market data; paid Connect listed ₹500/month at research date. Verify before purchase; cost unsuitable for initial capital.
+- https://openai.com/policies/terms-of-use/ — do not programmatically extract consumer ChatGPT output as API substitute.
+
+## Local architecture proposal (not deployed)
+Self-host n8n using official starter kit; timezone Asia/Kolkata; schedule 15-minute intervals during verified exchange sessions. Ingest permitted RSS/official releases and authorised quotes; normalize source/time, dedupe, quarantine stale/invalid records. Local Ollama summarizes evidence and proposes structured hypotheses; deterministic Python validates candles, costs, quantity, risk and expiry. Append SQLite journal and authorised Notion rows with idempotency keys; send Telegram or email only on state change (credentials separately configured). Broker-native alerts for timely price thresholds; do not assume they trigger AI or execute. Missing live feed => news watch only, no actionable intraday signals. No order nodes, broker credentials or browser-login automation. Use read-only permissions, local-only services, environment secrets, pinned releases, tests, fail closed, missed-run logging and kill switch. Computer must remain powered and connected; no zero total operating cost guarantee. Evaluate RSS access rights and data licensing. No code copied or installed. Review actual source, LICENSE, maintenance, dependencies and test evidence before adopting any repository.

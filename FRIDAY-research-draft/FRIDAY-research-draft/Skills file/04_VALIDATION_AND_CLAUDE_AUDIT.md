@@ -59,3 +59,26 @@ Existing personal database only. Add prediction ID, session date, cohort, strate
 - Original call unavailable: no inferred entry/target/stop or attribution.
 
 Independent Claude audit and empirical validation remain pending.
+
+
+---
+
+# v4 prospective validation and cross-model audit
+15-session diagnostic: 1–3 source/time/fee checks; 4–6 candle/news tests; 7–9 matched analyst comparison; 10–12 macro and false triggers; 13–15 frozen holdout. Any strategy change starts new version/cohort; no pooling tuned and untouched results. Actual timestamped premarket independent forecasts, then analyst and combined before open; no hindsight, immutable snapshots/hash. Paper capital ₹500, no leverage, one position. Real exposure ₹0 until separate approval. Candidate risk limits and cost gates in skills. Compare net expectancy, profit factor, drawdown, coverage, sample count, fill realism, directional accuracy by horizon and uncertainty. 15 sessions insufficient to prove edge; extend if evidence weak. No minimum number of trades forced. Prior Nov 23 contaminated example excluded. No assumption that 80% candlestick accuracy is real.
+
+## Tests
+- ₹500 cannot fund one ₹501 share; include entry charges.
+- Net target ₹1 with ₹5 risk fails ratio; gross profit after charges can be negative.
+- ₹2.50 risk cap impossible => WAIT; gap loss may exceed cap; suspension after threshold.
+- No live quote or stale candle => no intraday entry; 15-minute scheduler is not live streaming.
+- Existing stop not assumed fresh stop; no automatic orders; no failed intraday conversion to delivery.
+- Duplicate alert suppressed; missed run and outage logged; expired signal cannot be reused.
+- Macro scenario contradicts news headline => check official release and market context.
+- Unknown fee, no eligible quantity, incomplete fill sequence => WAIT/unresolved.
+- Different AI models agree without source => not verification.
+
+## Notion design
+Existing authorised personal data source only; preserve existing entries. Categories: Source, Broker call, Trader insight, Company research, Trade setup, Market brief, Macro event, Portfolio opportunity, Capital review, Prediction, System instruction, Audit. Structured fields: Cohort, Integrity, Strategy version, Frozen at, Cutoff, Expiry, Quantity, Capital required, Costs, Planned risk, Outcome, Asset; detailed timestamped evidence and fill ledger in page content, separate original records and appended outcome. Filtered views rather than duplicate databases. Never HEVIFY. Keep private holdings out of public GitHub. Record actual verified source/time, never backdate.
+
+## Copy-ready independent AI audit prompt
+Review all five v4 files as skeptical quantitative researcher, market analyst, risk manager and automation engineer. Independently verify claims, tariffs, Indian market data permissions, candidate repos and licenses. Audit ₹500 whole-share affordability, net cost and position sizing, prospective leakage controls, gaps/stops, fills, candlestick evidence, macro causality, analyst comparison and local n8n/Ollama design. Challenge the 15-session plan and thresholds; distinguish assumptions from validated results. Inspect source code before recommending reuse; no broker execution, login scraping or paid AI API. Propose concrete fixes and acceptance tests; preserve project isolation and concise responses. Claude: logic/risk; Kimi: source coverage; Gemini: macro evidence; DeepSeek: mathematical validation. Return critical blockers first, then revised text and change log, with citations. Do not claim backtests or installations not performed. No external writes. Do not use private user records. Final verdict must distinguish operational readiness from proven profitability.
