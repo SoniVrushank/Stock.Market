@@ -32,3 +32,30 @@ Act as a skeptical quant, equity analyst, risk manager and AI architect. Read al
 
 ## Review status
 Independent Claude review and empirical strategy validation pending.
+
+---
+
+## v3 historical and prospective prediction protocol
+1. Declare universe, session, strategy version, forecast horizon, exact cutoff (09:00 preliminary; 09:14 final), benchmark and scoring rules before collecting outcomes. For independent cohort freeze before external exposure; for combined cohort freeze before market opening. Store immutable original record or hash and actual creation time. Retrospective timestamps must not imply a prediction was genuinely made before open.
+2. Separate analyst-only, independent and combined cohorts. Compare on common eligible cases and report coverage across the full frozen universe. Exclude previously seen outcomes and unverifiable publication/revision times from unbiased performance estimates. Historical contaminated exercises are qualitative learning only.
+3. Direction metrics: opening = sign(open-prior close); noon drift = sign(price at 12:00-open); close drift = sign(close-open); separately report close versus prior close if useful. Define tie band before test. Score only explicit directional forecasts for the matching horizon; vague caution is not a quantified bearish forecast; WAIT is abstention. Report denominator, unresolved and coverage. Never mix index and stock accuracy without separate breakdown.
+4. Trade metrics: trigger actually reached after eligibility, executable fill, target/stop ordering, exit/expiry, costs, net P&L, expectancy and drawdown. A daily high alone does not prove a fill; a below-entry high may disprove one for that session. If both stop and target touched without sequencing, use conservative assumptions or unresolved. For no executed paper trades report zero simulated realised P&L and no evidence of edge, not successful profit protection. Use exact noon data or label nearest observed timestamp; never interpolate as fact.
+5. Prospective forward testing before real capital: fixed strategy, record all candidates and WAIT decisions, compare simple baselines and analyst cohorts, review across regimes with uncertainty intervals; do not tune rules on holdout. Any new rule starts a new version and evaluation cohort. Report after costs, not just direction.
+
+### 23 November 2026 exploratory lesson (not independently reverified in this update)
+Conversation reported Nifty, Ashoka Buildcon and Waaree Energies positive opening biases matching reported opening moves; Nifty and Waaree later reversed; Ashoka reportedly faded from its opening price; Maruti was WAIT; Nuvoco did not qualify risk gate. No approved stock trade. Prior outcome exposure and small sample invalidate unbiased accuracy claims. Noon observations were at mixed timestamps, not uniform 12:00. No confirmed Anil Singhvi stock-call comparison, and no evidence of incremental value or profitable execution. Treat numbers from prior chat as provisional until primary data verified; do not include this session in unbiased statistics. Lesson: separate catalyst/gap forecast from executable entry; gap confirmation rule is a hypothesis to test, not proven improvement.
+
+### Notion schema proposal (no schema changes authorised here)
+Existing personal database only. Add prediction ID, session date, cohort, strategy version, cutoff, frozen timestamp, source publication/revision, instrument, previous close, predicted opening/noon/close direction, trigger expiry, actual open/noon/close with observation timestamps, integrity (prospective/blind/contaminated/incomplete), fill status, entry/exit fill, costs, net P&L and outcome. Store original analyst and independent records separately; link by session/symbol. Keep original records immutable and append revisions. Use filtered views rather than more databases. No HEVIFY access.
+
+### Additional acceptance tests
+- 09:08 analyst call eligible only for final 09:14 cutoff; after 09:14 excluded. Original independent forecast unchanged.
+- Bullish gap then reversal: correct opening forecast may coexist with WAIT or failed trade; no automatic BUY.
+- Gap above entry range: no chase; expired or new separately frozen setup.
+- Analyst existing-long closing stop: never use as fresh trade intraday stop without independent validation.
+- Noon quote 12:20: label timestamp, exact-noon metric unresolved.
+- All WAIT: coverage zero, directional accuracy undefined for abstentions, no trade profitability inference.
+- Known outcome before replay: contaminated, excluded from unbiased cohort.
+- Original call unavailable: no inferred entry/target/stop or attribution.
+
+Independent Claude audit and empirical validation remain pending.

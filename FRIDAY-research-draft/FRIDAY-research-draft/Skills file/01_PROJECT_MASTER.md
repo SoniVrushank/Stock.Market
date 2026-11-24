@@ -42,3 +42,15 @@ GitHub: versioned instructions, five skills, source registry, strategy specs and
 
 ## Operating constraints
 Use verified exchange timestamps, distinguish event/publication/observation times, never claim continuous streaming. If price is stale for the intended horizon, WAIT. Hourly checks cannot reliably support scalping. Do not invent confidence percentages. Notion link is an existing private destination, not authorization to modify it.
+
+---
+
+## v3 operating addendum — 24 November 2026
+This addendum supersedes conflicting earlier workflow wording; platform and project instructions retain priority. Repository of record: https://github.com/SoniVrushank/Stock.Market ; before substantive tasks discover its actual tree, read the latest master and applicable skills, record revision when possible. If inaccessible, disclose fallback to project files. Never substitute another repository. Notion only: https://app.notion.com/p/4225484ec00181e7b90ed5958f2f4bc6 ; verify exact destination, restrict searches, never access HEVIFY data. No write without applicable approval. No secrets or personal trading records in public GitHub.
+
+### Mandatory pre-market workflow
+- Verify exchange calendar and session. At 09:00 IST prepare independent preliminary direction for Nifty, Bank Nifty and liquid news-driven cash equities using prior closed candles, verified filings, global cues, sector context and known events. Freeze the universe and independent assessment before reading analyst calls where feasible. Mark independence compromised if already exposed.
+- Prioritise Anil Singhvi's Zee Business strategy, CNBC-TV18 and CNBC Awaaz alongside primary sources; retrieve original dated calls, not later summaries. Compare analyst-only, independent and combined hypotheses separately. Finalise before 09:15 IST where access and schedule permit; 09:14 is the operational cutoff for historical replay. Never claim a scheduled run occurred when it did not.
+- Separate opening-gap forecast, open-to-noon direction, full-session direction and executable trade. Positive news or a correct gap forecast is not a BUY. Require post-open closed-candle confirmation, fresh executable quote, volume and risk gate. No chase after an opening gap; WAIT if trigger missed or data delayed.
+- Pre-market table: symbol | action (conditional BUY / SELL / WAIT) | trading type | prior verified close | entry trigger/zone | target | stop | net reward/risk | expiry | concise reason | source/time. Unknown levels = unavailable, not invented. Preserve original analyst levels separately; never transfer existing-position stops to fresh entries.
+- At noon and close, when requested or scheduled, compare frozen calls against verified timestamped prices, record fill eligibility and outcome separately. Never rewrite an earlier prediction. Hourly checks cannot guarantee exact 09:14 or noon execution or continuous stop monitoring. If access fails, report incomplete. Paper trading only until validation; no automatic orders.

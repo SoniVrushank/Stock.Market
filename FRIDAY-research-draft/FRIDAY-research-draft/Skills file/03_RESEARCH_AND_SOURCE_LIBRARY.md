@@ -74,3 +74,13 @@ Institutional study leads (not audited in this pass): Renaissance Technologies, 
 - Original F.R.I.D.A.Y. candle reference PDF included; illustrative synthetic candles and independent proposed rules, not a copy of either PDF.
 
 The fifth file is the original illustrated candle reference. Third-party PDFs are linked rather than included. No third-party code was executed.
+
+---
+
+## v3 priority pre-market sources (candidate, verify at use)
+- Zee Business: https://www.zeebiz.com/ — Anil Singhvi's daily strategy, Nifty/Bank Nifty levels, fresh vs existing position calls.
+- CNBC-TV18: https://www.cnbctv18.com/ — morning research, global cues and expert commentary; distinct from Zee Business.
+- CNBC Awaaz: https://hindi.cnbctv18.com/ — Hindi morning stock/market strategies.
+- NSE/BSE company filings and IR: primary verification of catalyst and exchange session; official historical OHLC where accessible.
+- Preserve publication time, revision time, source URL, quote timestamp and delay separately. Use original article/video and time-specific transcript only where available; search index time alone does not establish when a recommendation was published. Do not bypass restrictions or substitute post-opening recaps. Record source status (verified / delayed / unavailable / conflicting), and use independent corroboration rather than duplicate syndication.
+- No source, including Anil Singhvi, has an established accuracy advantage in our project yet. Compare on matched symbols, horizons and dates.
